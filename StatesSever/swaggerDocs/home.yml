@@ -1,0 +1,27 @@
+tags:
+  - Directories
+responses:
+  200:
+    description: Mensaje de éxito al conectarse a la API
+    schema:
+      type: object
+      properties:
+        message:
+          type: string
+          example: "Hello world!"
+  401:
+    description: Unauthorized
+    schema:
+      type: object
+      properties:
+        message:
+          type: string
+          example: "Unauthorized"
+  500:
+    description: Internal server error
+    schema:
+      type: object
+      properties:
+        message:
+          type: string
+          example: "Internal server error"
